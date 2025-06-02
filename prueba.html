@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="María Camila Palma López">
+    <meta name="keywords" content="nutrias, animales, naturaleza, tiernos, mamíferos, agua dulce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nutrias</title>
+    <link rel="stylesheet" href="hojadeestilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>nutrias</h1>
+        <p>todo lo que debes saber de estos mamíferos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://seaworld.org/animals/all-about/otters/habitat/">hábitat</a></li>
+            <li><a href="https://www.expertoanimal.com/que-comen-las-nutrias-25859.html">alimentación</a></li>
+            <li><a href="https://translate.google.com/translate?u=https://www.doi.gov/blog/12-facts-about-otters-sea-otter-awareness-week&hl=es&sl=en&tl=es&client=wa">datos curiosos</a></li>
+            <li><a href="https://consensus-app.translate.goog/home/blog/can-i-have-a-pet-otter/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=sge#:~:text=Cuidado%20y%20mantenimiento,que%20satisfaga%20sus%20necesidades%20nutricionales.">cómo ayudarlas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 id="habitat"> ¿Dónde viven las nutrias?</h2>
+            <p>Las nutrias habitan en ríos, lagos y zonas costeras. Prefieren aguas limpias y tranquilas, y suelen construir madrigueras cerca del agua, conocidas como "camas".</p>
+
+            <h2 id="comida"> ¿Qué comen?</h2>
+            <p>Son carnívoras: comen peces, cangrejos, ranas y pequeños invertebrados. Tienen dientes fuertes y una mordida poderosa para romper caparazones.</p>
+
+            <h2 id="datos"> Datos curiosos</h2>
+            <ul>
+                <li>Duermen flotando de la mano para no separarse.</li>
+                <li>Usan piedritas como herramientas para abrir conchas.</li>
+                <li>¡Tienen una barriga tan peluda que es más densa que la de cualquier otro mamífero!</li>
+            </ul>
+
+            <h2 id="cuidado"> ¿Cómo podemos ayudarlas?</h2>
+            <p>Protegiendo los ríos, evitando la contaminación con plásticos, y apoyando reservas naturales. Muchas especies de nutria están en peligro.</p>
+        </section>
+
+        <aside>
+            <h3> Sabías que...</h3>
+            <p>Una nutria marina puede tener más de 600,000 pelos por cm². ¡Es como un abrigo acolchonado natural!</p>
+
+            <h3> Nutrias en peligro</h3>
+            <p>La nutria gigante del Amazonas está amenazada. ¡Cuidemos sus hábitats!</p>
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 María Camila Palma López</p>
+    </footer>
+        <script>
+        const NAMESPACE = "nutrias-2025";
+        const KEY = "pagina-principal";
+
+        fetch(`https://api.countapi.xyz/create?namespace=${NAMESPACE}&key=${KEY}&value=0`)
+            .catch(() => {});
+
+        fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`)
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("visitas").innerText = data.value;
+            });
+    </script>
+    <p> <center> esta página ha sido visitada <span id="visitas"></span> veces 🦦</p> </center>
+</body>
+</html>
